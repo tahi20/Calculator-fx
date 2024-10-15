@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="301.0" style="-fx-background-color: #003333;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo2.HelloController">
+    <children>
+        <TextField fx:id="text" alignment="TOP_RIGHT" layoutX="22.0" layoutY="25.0" prefHeight="66.0" prefWidth="251.0">
+            <font>
+                <Font size="31.0" />
+            </font>
+        </TextField>
+        <GridPane alignment="TOP_CENTER" layoutX="25.0" layoutY="123.0" prefHeight="271.0" prefWidth="251.0" style="-fx-background-color: #cccccc; -fx-border-color: #000000;">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="74.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="76.0" minWidth="10.0" prefWidth="76.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="55.0" minHeight="30.0" prefHeight="55.0" valignment="CENTER" />
+                <RowConstraints maxHeight="98.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="68.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="54.0" minHeight="9.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="48.0" minHeight="9.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="46.0" minHeight="0.0" prefHeight="43.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button mnemonicParsing="false" onAction="#onClickBut2" text="2" GridPane.columnIndex="1" />
+                <Button mnemonicParsing="false" onAction="#onClickBut1" text="1" textAlignment="CENTER" />
+                <Button mnemonicParsing="false" onAction="#onClickBut3" text="3" GridPane.columnIndex="2" />
+                <Button mnemonicParsing="false" onAction="#onClickBut4" text="4" GridPane.rowIndex="1" />
+                <Button mnemonicParsing="false" onAction="#onPlusClick" text="+" GridPane.rowIndex="5" />
+                <Button mnemonicParsing="false" onAction="#onEqualClick" text="=" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#onClickBut5" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#onClickBut6" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#onClickBut7" text="7" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#onClickBut9" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#onClickBut8" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#onDivideClick" text="/" GridPane.columnIndex="3">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onMultClick" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onMinusClick" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onClickBut0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" text="," GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" text="\%" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#onDeleteClick" text="С" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <GridPane.margin>
+                  <Insets left="18.0" />
+               </GridPane.margin>
+            </Button>
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>
